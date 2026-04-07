@@ -1,6 +1,4 @@
-# Templates Moved
-
-This skill uses smaller template references to reduce context bloat.
+# Templates
 
 Load only the file you need:
 

@@ -9,12 +9,18 @@ living docs.
 2. Run `scripts/match-source-files.py <changed-file> [...]` to find affected
    docs.
 3. Read only the matched docs and the changed source files.
-4. Update the smallest necessary sections and refresh `last_updated`.
-5. Update `docs/DESIGN.md` only for major capability or architecture changes.
-6. Append a concise session entry to `docs/CHANGELOG.md`.
+4. If no doc matches but the change clearly introduces a new feature, service,
+   or architecture area, create the smallest missing doc needed.
+5. Apply [propagation-rules.md](update/propagation-rules.md).
+6. Update the smallest necessary sections and refresh `last_updated`.
+7. Update `docs/DESIGN.md` only for major capability or architecture changes.
+8. Append a concise session entry to `docs/CHANGELOG.md`.
 
-## Use the Focused Skill for More Detail
+## Rules
 
-If installed, load:
-
-- `../living-docs-update/SKILL.md`
+- Change the smallest set of sections possible.
+- Create a new doc only when the existing tree no longer covers the changed
+  area.
+- Preserve frontmatter keys.
+- Use [update-instructions-template.md](update/update-instructions-template.md)
+  only when a repo-local maintenance file is needed.

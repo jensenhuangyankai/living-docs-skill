@@ -2,7 +2,7 @@
 
 ```markdown
 ---
-generated_by: codex (living-docs-bootstrap skill)
+generated_by: codex (living-docs skill)
 title: UI Pages
 status: stable
 source_files:

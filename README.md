@@ -1,41 +1,21 @@
-# Living Docs Skills
+# Living Docs Skill
 
-Focused skills for bootstrapping, navigating, and maintaining source-linked
-living documentation.
-
-## Skills
-
-| Skill | Purpose |
-|-------|---------|
-| `living-docs` | One-install umbrella skill for bootstrap, navigate, and update workflows |
-| `living-docs-bootstrap` | Create the initial `docs/` system for a repository |
-| `living-docs-update` | Update affected docs after code changes |
-| `living-docs-navigator` | Load only the docs relevant to a task |
+One skill for bootstrapping, navigating, and maintaining source-linked living
+documentation.
 
 ## Install
-
-Recommended single install:
 
 ```bash
 npx skills add https://github.com/jensenhuangyankai/living-docs-skill --skill living-docs
 ```
 
-Install the whole focused suite:
+## What It Does
 
-```bash
-npx skills add https://github.com/jensenhuangyankai/living-docs-skill --skill '*'
-```
+The `living-docs` skill infers the mode from the request and the repository:
 
-Install individual focused skills:
+- bootstrap living docs in a repo that does not have them yet
+- navigate existing docs without loading the whole tree
+- update docs after code changes
 
-```bash
-npx skills add https://github.com/jensenhuangyankai/living-docs-skill --skill living-docs-bootstrap
-npx skills add https://github.com/jensenhuangyankai/living-docs-skill --skill living-docs-update
-npx skills add https://github.com/jensenhuangyankai/living-docs-skill --skill living-docs-navigator
-```
-
-## Why This Split
-
-The original single skill mixed setup, maintenance, and navigation into one
-workflow. This repo now keeps those concerns separate so agents can load only
-the instructions they actually need.
+You do not need separate installs for bootstrap, navigation, or updates. Those
+playbooks live inside the single `living-docs` skill as internal references.

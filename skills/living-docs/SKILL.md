@@ -1,14 +1,16 @@
 ---
 name: living-docs
-description: One-install living-docs skill for bootstrapping, navigating, and updating source-linked design documentation. Use when the user wants a single skill that can create a docs system, load relevant docs with low context overhead, or keep docs synced after code changes.
+description: Bootstrap, navigate, and update source-linked living docs. Use when the user mentions docs, design docs, architecture docs, keeping docs in sync, asks what docs already exist, or needs missing docs created for new code areas.
 ---
 
 # Living Docs
 
-Single entrypoint for the living-docs workflow. Keep this skill installed when
-you want one command surface but still want progressive disclosure.
+Single entrypoint for the living-docs workflow.
 
-## Choose the Mode
+## Infer the Mode
+
+Choose the mode from the request and repository state. Do not ask the user to
+pick unless the situation is genuinely ambiguous.
 
 - **Bootstrap**: No living-docs system exists yet.
   Load [bootstrap.md](references/bootstrap.md).
@@ -20,6 +22,8 @@ you want one command surface but still want progressive disclosure.
 ## Rules
 
 - Pick one mode first. Do not load every reference file up front.
+- Treat "docs", "design docs", "architecture docs", and similar wording as a
+  likely trigger for this skill.
 - Search first and read only the relevant docs or templates.
 - Prefer the smallest accurate docs update over broad rewrites.
 
