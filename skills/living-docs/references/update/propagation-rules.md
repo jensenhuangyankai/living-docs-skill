@@ -1,5 +1,12 @@
 # Propagation Rules
 
+## Create a New Doc When
+
+- a changed area has no matching doc through `source_files`
+- a new feature, service, or architecture concern is now important enough to
+  deserve its own doc
+- adding a section to `docs/DESIGN.md` alone would hide important detail
+
 ## Update the Matched Doc When
 
 - its `source_files` globs match a changed file
@@ -20,6 +27,9 @@
 
 ## Prefer Minimal Edits
 
+- Prefer extending an existing matched doc before creating a new one.
 - Update affected sections, not whole files.
+- When a new doc is needed, create the smallest honest doc and add
+  `source_files`.
 - Keep diagrams when they are still directionally correct.
 - Flag uncertainty instead of inventing architecture.

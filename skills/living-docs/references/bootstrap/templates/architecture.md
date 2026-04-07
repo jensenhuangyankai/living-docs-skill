@@ -5,7 +5,7 @@ Use this for `system-overview.md`, `data-model.md`, `deployment.md`, and
 
 ```markdown
 ---
-generated_by: codex (living-docs-bootstrap skill)
+generated_by: codex (living-docs skill)
 title: <Document Title>
 status: stable
 source_files:

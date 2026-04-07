@@ -2,7 +2,7 @@
 
 ```markdown
 ---
-generated_by: codex (living-docs-bootstrap skill)
+generated_by: codex (living-docs skill)
 title: Documentation Changelog
 last_updated: YYYY-MM-DD
 ---

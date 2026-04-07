@@ -26,6 +26,5 @@ Use these patterns to keep context small.
 
 ## If Code Already Changed
 
-- Use `living-docs-update/scripts/list-changed-files.sh`
-- Then use `living-docs-update/scripts/match-source-files.py` to find affected
-  docs
+- Use `scripts/list-changed-files.sh`
+- Then use `scripts/match-source-files.py` to find affected docs

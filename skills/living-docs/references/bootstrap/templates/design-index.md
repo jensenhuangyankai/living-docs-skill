@@ -2,7 +2,7 @@
 
 ```markdown
 ---
-generated_by: codex (living-docs-bootstrap skill)
+generated_by: codex (living-docs skill)
 title: <Project Name> Living Design
 status: stable
 last_updated: YYYY-MM-DD
